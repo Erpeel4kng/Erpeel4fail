@@ -42,54 +42,64 @@
     </nav>
   </header>
   
+  <!-- contact section -->
+  <section class="contactForm">
+    <h1 class="judul">Kirim Pesan</h1>
+    <form action="https://formspree.io/f/xayvgwvr" method="POST">
+      <div class="container">
+        <div class="row100">
+          <div class="col">
+             <div class="inputBox">
+              <input type="text" name="Nama" required>
+              <span class="text">Nama Lengkap</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <input type="email" name="Email" required>
+              <span class="text">Email</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox">
+              <input type="number" name="No.Hp" required>
+              <span class="text">No.HP</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="col">
+            <div class="inputBox">
+              <select name="Kategori">
+                <option value="Pesan">Pesan</option>
+                <option value="Saran">Saran</option>
+                <option value="Tanggapan">Tanggapan</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <div class="inputBox textarea">
+              <textarea name="Pesan" required="required"></textarea>
+              <span class="text">Ketik Pesan/Saran/Tanggapan disini...</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="col">
+            <button type="submit">Kirim</button>
+            <button type="reset">Hapus</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </section>
   
-  <!-- footer -->
-  <footer>
-    <div class="copyright">
-      <div class="sec aboutus">
-        <h2>Tentang Kami</h2>
-        <p>RPL adalah sebuah jurusan di Sekolah Menengah Kejuruan (SMK) yang berhubungan dengan Teknologi Informasi (IT) dan komputer. RPL sendiri merupakan singkatan dari Rekayasa Perangkat Lunak.</p>
-        <ul class="sci">
-          <li><a href="https://www.facebook.com/smkn4kng/"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://instagram.com/smkn_04kng?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://youtube.com/channel/UChW79ZaADr1NsBPGlm7RsIw"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="https://instagram.com/rpl_smkn4kng?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-      
-      <div class="sec tautan">
-        <h2>Tautan Terkait</h2>
-        <ul>
-          <li><a href="https://disdik.jabarprov.go.id/#/">Disdik Jabar</a></li>
-          <li><a href="https://www.smkn4kuningan.sch.id/">SMK Negeri 4 Kuningan</a></li>
-        </ul>
-      </div>
-      
-      <div class="sec contact">
-        <h2>Hubungi Kami</h2>
-        <p>RPL 4 SMK Negeri 4 Kuningan</p><br>
-        <ul class="info">
-          <li>
-            <span><i class="fas fa-map-marker-alt"></i></span>
-            <span>Jl. Cikeusik No.73, Cikeusik, Cidahu, Kabupaten Kuningan, Jawa Barat.</span>
-          </li>
-          <li>
-            <span><i class="fab fa-whatsapp"></i></span>
-            <p><a href="https://wa.me/qr/5NH7NRB42TX4G1">089664221610</a></p>
-          </li>
-          <li>
-            <span><i class="fa fa-envelope"></i></span>
-            <p><a href="mailto:erpeel4kng@gmail.com">erpeel4kng@gmail.com</a></p>
-          </li>
-        </ul>
-      </div>
-      <div class="copyrightText">
-        <p>Copyright &copy; 2022 RPL 4 SMK Negeri 4 Kuningan.</p>
-        <p>All rights reserved | Made with <a href="#"><i class="fa fa-heart"></i></a> by <a href="https://instagram.com/ajnrji_">AJI NUR AJI</a></p>
-      </div>
-    </div>
-  </footer>
-
   <!-- javascript src -->
   <script src="./js/navbar.js"></script>
 

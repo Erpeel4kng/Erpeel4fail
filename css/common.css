@@ -12,6 +12,28 @@ body{
   min-height: 100vh;
 }
 
+
+.judul{
+  position: relative;
+}
+
+h1{
+  position: relative;
+  color: #fbfbfa;
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.judul:before{
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 20%;
+  height: 5px;
+  background-color: #dc1617;
+}
+
 footer{
   position: relative;
   width: 100%;
@@ -167,6 +189,14 @@ footer .copyright .sec.contact p{
 }
 
 @media screen and (max-width: 768px){
+  h1{
+    padding-bottom: 3px;
+  }
+  
+  .judul:before{
+    height: 3px;
+  }
+  
   footer{
     padding: 15px;
   }

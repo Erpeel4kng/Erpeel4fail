@@ -63,28 +63,6 @@
   padding: 15px;
 }
 
-.judul{
-  position: relative;
-}
-
-h1{
-  position: relative;
-  color: #fbfbfa;
-  padding-bottom: 5px;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.judul:before{
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 40%;
-  height: 5px;
-  background-color: #dc1617;
-}
-
 .pengertian .penjelasan{
   color: #fbfbfa;
   font-size: 12px;
@@ -170,14 +148,6 @@ tr .nomor{
   .poin-poin{
     margin-left: 15px;
     margin-top: 10px;
-  }
-  
-  h1{
-    padding-bottom: 3px;
-  }
-  
-  .judul:before{
-    height: 3px;
   }
   
   table{
