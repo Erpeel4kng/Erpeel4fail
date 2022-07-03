@@ -1,9 +1,9 @@
 .banner{
-  background: url("../img/bg.png");
+  background: url("../img/bg.jpg");
   background-size: cover;
   position: relative;
-  width: 100%;
-  height: 100vh;
+  width: 1600px;
+  height: 1066px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,9 +118,9 @@ tr .nomor{
 
 @media screen and (max-width: 768px){
   .banner{
-    height: 300px;
-    width: 100%;
-  }
+    width: 360px;
+    height: 250px;
+  } 
   
   .banner .sekolah h2:before{
     left: 50%;
