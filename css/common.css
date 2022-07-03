@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: rgba(28, 54, 109, .8);
+  min-height: 100vh;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 50px 15px;
+  background-color: #1c366d;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+footer .copyright{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+footer .copyright .sec{
+  margin-right: 30px;
+}
+
+footer .copyright .sec.aboutus{
+  width: 40%;
+}
+
+footer .copyright h2{
+  position: relative;
+  color: #fbfbfa;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+footer .copyright h2:before{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background-color: #dc1617;
+}
+
+footer .copyright .sec.aboutus p,
+footer .copyright .sec.contact p{
+  color: rgba(225, 225, 225, .7);
+}
+
+.sci{
+  margin-top: 20px;
+  display: flex;
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #1c366d;
+  border: 1px solid #fbfbfa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: .3s ease;
+}
+
+.sci li a:hover{
+  background-color: #dc1617;
+}
+
+.sci li a .fab{
+  color: #fbfbfa;
+  font-size: 20px;
+}
+
+.tautan{
+  position: relative;
+  width: 25%;
+}
+
+.tautan ul li{
+  list-style: none;
+}
+
+.tautan ul li a{
+  color: rgba(225, 225, 225, .7);
+  margin-bottom: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.tautan ul li a:hover{
+  color: #fbfbfa;
+}
+
+.contact{
+  width: calc(35% - 60px);
+  margin-right: 0 !important;
+}
+
+.contact .info{
+  position: relative;
+}
+
+.contact .info li{
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.contact .info li span:nth-child(1){
+  color: #fbfbfa;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.contact .info li span{
+  color: rgba(225, 225, 225, .7);
+}
+
+.contact .info li a{
+  color: rgba(225, 225, 225, .7);
+  text-decoration: none;
+}
+
+.contact .info li a:hover{
+  color: #fbfbfa;
+}
+
+.copyrightText{
+  width: 100%;
+  padding: 8px 15px;
+  text-align: center;
+  color: #fbfbfa;
+  margin-top: 15px;
+  border-top: 1px solid rgba(225, 225, 225, .7);
+}
+
+.copyrightText a{
+  text-decoration: none;
+  color: #dc1617;
+  font-weight: 700;
+}
+
+.copyrightText a:hover{
+  color: #fbfbfa;
+}
+
+@media screen and (max-width: 768px){
+  footer{
+    padding: 15px;
+  }
+  
+  footer .copyright{
+    flex-direction: column;
+  }
+  
+  footer .copyright .sec{
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  
+  footer .copyright .sec.aboutus{
+    width: 100%;
+    font-size: 12px;
+  }
+  .sci li a{
+    height: 30px;
+    width: 30px;
+  }
+  
+  .sci li a .fab{
+    font-size: 12px;
+  }
+  
+  .tautan{
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .contact{
+    width: 100%;
+    font-size: 12px;
+  }
+  
+  .copyrightText{
+    font-size: 12px;
+  }
+  
+  .contact .info li span:nth-child(1){
+    font-size: 15px;
+  }
+  
+}

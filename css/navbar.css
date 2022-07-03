@@ -1,0 +1,134 @@
+header{
+  background-color: #1c366d;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .8);
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.navbar a{
+  color: #fbfbfa;
+  text-decoration: none;
+}
+
+.navbar a span{
+  color: #dc1617;
+}
+
+.navbar ul li{
+  list-style: none;
+}
+
+.navbar ul li a{
+  color: #fbfbfa;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.navbar .nav-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.navbar .brand{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+  position: relative;
+  padding: 5px;
+}
+
+.nav-link:hover{
+  color: #dc1617;
+}
+
+.nav-link::after{
+  content: '';
+  width: 100%;
+  height: 3px;
+  background: #fbfbfa;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::after{
+  transform: scaleX(1);
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fbfbfa;
+}
+
+@media screen and (max-width:768px){
+ .navbar .brand{
+    font-size: 1.2rem
+  }
+  
+  .hamburger{
+    display: block;
+  }
+  
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: #1c366d;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 99;
+    border-bottom: 1px solid #dc1617;
+    padding: 10px 0;
+  }
+  
+  .nav-item{
+    border-bottom: 3px solid rgba(255, 225, 225, .2);
+  }
+  
+  .nav-menu.active{
+    left: 0;
+  }
+}
